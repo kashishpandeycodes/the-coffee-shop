@@ -1,0 +1,399 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    color: #3E2723;
+    background: #f5f1E8;
+}
+h1, h2, h3, h4{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.top-bar{
+    background: #D4C4A8;
+    color: #3E2723;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.85rem;
+}
+
+.main-header{
+    background: #faf8f5;
+    border-bottom: 1px solid #E0F7FF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+.nav-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.brand{
+    font-size: 2rem;
+    color: #3E2723;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin:0;
+    padding: 0;
+    justify-content: center;
+}
+.menu-list a{
+    text-decoration: none;
+    color: #3E2723;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.menu-list a:hover{
+    color: #8B4513;
+}
+.cta-nav{
+    background: #3E2723;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.cta-nav:hover{
+    background: #8B4513;
+}
+
+.banner{
+    min-height: 85vh;
+    background: linear-gradient(110deg, #faf8f5 50%, rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1400') right/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    text-align: center;
+}
+.banner-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tag{
+    background: #F5DEB3;
+    color: #3E2723;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.banner-text h2{
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin: 1rem 0;
+    color: #3E2723;
+}
+.banner-text p{
+    font-size: 1.1rem;
+    color: #5a5a5a;
+    margin-bottom: 2rem;
+}
+.banner-btns{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.btn-primary{
+    background: #3E2723;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    background: #D4C4A8;
+    transform: translateY(-2px);
+}
+.btn-outline{
+    border: 2px solid #C4B59A;
+    color: #3E2723;
+    padding: 12px 32px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-outline:hover{
+    background: #C4B59A;;
+    color: #3E2723;
+}
+
+.usp-strip{
+    display: flex;
+    justify-content: space-around;
+    background: #D4C4A8;
+    color: #3E2723;
+    padding: 3rem 5%;
+    text-align: center;
+}
+.usp-number{
+    font-size: 2.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #3E2723;
+    display: block;
+}
+.usp-item h4{
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+.usp-item p{
+    color: #3E2723;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.brews-section{
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.sub-title{
+    color: #C4B59A;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+.section-heading h3{
+    font-size: 3rem;
+    color: #3E2723;
+    margin-top: 0.5rem;
+}
+.brews-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.brew-card{
+    display: flex;
+    background: #fAf8f5;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    align-items: stretch;
+}
+
+.brew-card:hover{
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transform: translateY(-5px);
+}
+.brew-img{
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    min-height: 220px;
+    aspect-ratio:4/3;
+}
+.brew-info{
+    padding: 1.5rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.brew-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0.5rem;
+}
+.brew-info h4{
+    font-size: 1.4rem;
+    color: #3E2723;
+}
+.price{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #C4B59A;
+}
+.brew-info p{
+    color: #666;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+.add-btn{
+    background: #C4B59A;
+    color: #3E2723;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+.add-btn:hover{
+    background: #D4C4A8;
+}
+
+.story-section{
+    display: flex;
+    background: #fAf8f5;
+    border-radius: 12px;
+    padding: 80px 5%;
+}
+.story-left{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.story-left img{
+    width: 100%;
+    max-width:450px;
+    height: auto;
+    border-radius:12px;
+}
+   
+.story-right{
+    width: 55%;
+    padding: 4rem 3rem;
+}
+.story-right h3{
+    font-size: 2.5rem;
+    color: #3E2723;
+    margin: 0.5rem 0 1.5rem 0;
+}
+.story-right p{
+    color: #5a5a5a;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+.stats{
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #D4C4A8;
+}
+.stats strong{
+    display: block;
+    font-size: 2rem;
+    color: #C4B59A;
+    font-family: 'Cormorant Garamond', serif;
+}
+.stats span{
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.review-section{
+    padding: 5rem 5%;
+    text-align: center;
+}
+.review-box{
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fAf8f5;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.quote{
+    font-size: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: #3E2723;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+.reviewer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.reviewer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.reviewer strong{
+    display: block;
+    color: #3E2723;
+}
+.reviewer span{
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.main-footer{
+    background: #D4C4A8;
+    color: #3E2723;
+}
+.footer-grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+.footer-col h4{
+    color: 3E2723;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.footer-col p{
+    font-size: 0.9rem;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+.footer-bottom{
+    border-top: 1px solid #C4B59A;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 900px){ 
+    .brews-container{ grid-template-columns: 1fr; }
+    .brew-card{width: 100%;margin-bottom: 20px;}
+    .story-section{ flex-direction: column; margin: 0; }
+    .story-left, .story-right{ width: 100%; }
+    .story-left img{ width:100%;height:auto; }
+    .footer-grid{ grid-template-columns: repeat(2, 1fr); }
+    .banner-text h2{ font-size: 3rem; }
+    .usp-strip{ flex-direction: column; gap: 2rem; }
+}
+@media (max-width: 768px){
+    nav ul,.menu-list{ 
+        display: flex !important;
+        flex-direction: column;
+        gap:15px;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+    }
+}
